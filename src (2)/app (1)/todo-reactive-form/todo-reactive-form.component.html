@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="form">
+        <!-- formGroup pour avoir recours à l'allure du formulaire dans le ts -->
+        <!-- formControlName indiquer ce champ là il est lié à quelle identité du formulaire -->
+        <!-- formControlName indiquer ce champ là il est lié à quelle identité du formulaire -->
+        <form [formGroup]="authForm" (ngSubmit)="checkLogin()">
+            <label for="">Login</label>
+            <input type="text" formControlName="login" required/><br>
+            <label for="">Password</label>
+            <input type="password" formControlName="password" /><br>
+            <div class="login">
+                <button class="btn btn-dark" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

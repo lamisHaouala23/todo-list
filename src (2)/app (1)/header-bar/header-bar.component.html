@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>MY TODO LIST</h1>
+    <nav>
+    <button class="btn btn-dark"[routerLink]="['']">Todos</button>
+    <!-- au lieu de mettre sign in on va mettre soit sign in soit sign out en utilisant la valeur de btnSignValue -->
+    <button class="btn btn-dark" (click)="signOut()" [routerLink]="['signin']">{{_authService.btnSignValue}}</button>
+    <button class="btn btn-dark" (click)="todoService.todoAddShowModal=true">New</button>
+  </nav>
+  </div>
+  
